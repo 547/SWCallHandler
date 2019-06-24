@@ -10,6 +10,7 @@
 		E61855D422C0636100ED56D8 /* SWCallHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61855CA22C0636100ED56D8 /* SWCallHandler.framework */; };
 		E61855D922C0636100ED56D8 /* SWCallHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61855D822C0636100ED56D8 /* SWCallHandlerTests.swift */; };
 		E61855DB22C0636100ED56D8 /* SWCallHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E61855CD22C0636100ED56D8 /* SWCallHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E61855E522C065AA00ED56D8 /* SNCallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61855E422C065AA00ED56D8 /* SNCallHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E61855D322C0636100ED56D8 /* SWCallHandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWCallHandlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61855D822C0636100ED56D8 /* SWCallHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCallHandlerTests.swift; sourceTree = "<group>"; };
 		E61855DA22C0636100ED56D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61855E422C065AA00ED56D8 /* SNCallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNCallHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		E61855CC22C0636100ED56D8 /* SWCallHandler */ = {
 			isa = PBXGroup;
 			children = (
+				E61855E422C065AA00ED56D8 /* SNCallHandler.swift */,
 				E61855CD22C0636100ED56D8 /* SWCallHandler.h */,
 				E61855CE22C0636100ED56D8 /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E61855C922C0636100ED56D8 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					E61855D222C0636100ED56D8 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61855E522C065AA00ED56D8 /* SNCallHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		E61855DF22C0636100ED56D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -359,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Seven.SWCallHandler;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -367,6 +374,7 @@
 		E61855E022C0636100ED56D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -393,6 +401,7 @@
 		E61855E222C0636100ED56D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWCallHandlerTests/Info.plist;
@@ -411,6 +420,7 @@
 		E61855E322C0636100ED56D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GTWT2P766B;
 				INFOPLIST_FILE = SWCallHandlerTests/Info.plist;
