@@ -136,6 +136,6 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
 
-  Spec.swift_version = "5.0"
+  spec.swift_version = "5.0"
 
 end
